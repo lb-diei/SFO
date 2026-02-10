@@ -7,21 +7,25 @@ Automatically organize your messy folders! Sort files by type, date, or size wit
 
 ## One-Click Organization
 
-Before vs After:
+### Before (Messy Downloads Folder)
 
-`
-Downloads/              organized_files/
-photo.jpg            images/
-report.pdf           photo1.jpg
-video.mp4            screenshot.gif
-old_doc.docx         documents/
-backup.zip           report.pdf
-                      report_20260210.pdf
-                      videos/
-                      video.mp4
-                      archives/
-                          backup.zip
-`
+| File Name      | Type  |
+|----------------|-------|
+| photo.jpg      | Image |
+| report.pdf      | Doc   |
+| video.mp4       | Video |
+| old_doc.docx    | Doc   |
+| backup.zip      | Other |
+
+
+### After (Organized by Type)
+
+| Folder      | Files                           |
+|-------------|---------------------------------|
+| images/     | photo.jpg                       |
+| documents/  | report.pdf, old_doc.docx        |
+| videos/     | video.mp4                       |
+| archives/   | backup.zip                      |
 
 
 ## Quick Start
@@ -92,60 +96,51 @@ Organize files:
 
 ## Examples
 
-### Example 1: Sort by Type
+### Example 1: Organize by Date
 
-`
-images/
-  photo1.jpg
-  screenshot.gif
-
-documents/
-  report.pdf
-  notes.txt
-
-videos/
-  video.mp4
-`
+| Year-Month | Files             |
+|------------|-------------------|
+| 2026-01    | report.pdf, notes.txt |
+| 2026-02    | data.xlsx         |
+| 2025-12    | old_backup.zip    |
 
 
-### Example 2: Sort by Date
+### Example 2: Organize by Size
 
-`
-2026/
-  01/
-    report.pdf
-    notes.txt
-
-  02/
-    data.xlsx
-`
+| Category | Files                        |
+|----------|------------------------------|
+| Tiny     | icon.png, logo.svg          |
+| Small    | photo.jpg, document.pdf     |
+| Medium   | video.mp4, archive.zip       |
 
 
 ### Example 3: Rename with Timestamps
 
-`
-report_20260210_143022.pdf
-photo_20260210_143023.jpg
-data_20260210_143024.xlsx
-`
+| Original Name | Renamed To                    |
+|---------------|-------------------------------|
+| report.pdf    | report_20260210_143022.pdf   |
+| photo.jpg     | photo_20260210_143023.jpg    |
+| data.xlsx     | data_20260210_143024.xlsx    |
 
 
 ## Conflict Resolution
 
-When target file exists:
-
-- Skip (default) - Keep existing file
-- Overwrite - Replace with source file
-- Auto-rename - Add suffix _1, _2, _3...
-- Ask user - Prompt for each conflict
+| Action        | Description                            |
+|---------------|----------------------------------------|
+| Skip          | Keep existing file (default)           |
+| Overwrite     | Replace with source file               |
+| Auto-rename   | Add suffix _1, _2, _3...              |
+| Ask user      | Prompt for each conflict               |
 
 
 ## Technical Details
 
-- Windows, Linux, macOS support
-- Bash-based file operations
-- Nested directory support
-- Max 1000 rename attempts
+| Item                    | Description                          |
+|-------------------------|--------------------------------------|
+| Operating Systems       | Windows, Linux, macOS                |
+| File Operations         | Bash-based                           |
+| Directory Structure     | Nested folders supported              |
+| Max Rename Attempts     | 1000                                 |
 
 
 ## Configuration Options
@@ -153,11 +148,11 @@ When target file exists:
 | Parameter     | Description                   | Default         |
 |---------------|------------------------------|-----------------|
 | Source path   | Directory to organize        | -               |
-| Target path   | Output directory             | organized_files |
-| Sort method   | extension/size/date/prefix  | extension       |
+| Target path   | Output directory            | organized_files |
+| Sort method   | extension/size/date/prefix | extension       |
 | Rename method | timestamp/number/keep        | keep original   |
 | Action        | copy/move                   | copy            |
-| Conflict      | skip/overwrite/rename/ask    | skip            |
+| Conflict      | skip/overwrite/rename/ask   | skip            |
 
 
 ## Important Notes
