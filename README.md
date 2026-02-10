@@ -86,31 +86,31 @@ Organize files:
 
 ### Example 1: Sort by Type
 `
-→ images/
-│   ├── photo1.jpg
-│   └── screenshot.gif
-→ documents/
-│   ├── report.pdf
-│   └── notes.txt
-→ videos/
-│   └── video.mp4
+-> images/
+|   ├── photo1.jpg
+|   └── screenshot.gif
+-> documents/
+|   ├── report.pdf
+|   └── notes.txt
+-> videos/
+|   └── video.mp4
 `
 
 ### Example 2: Sort by Date
 `
-→ 2026/
-│   ├── 01/
-│   │   ├── report.pdf
-│   │   └── notes.txt
-│   └── 02/
-│       └── data.xlsx
+-> 2026/
+|   ├── 01/
+|   |   ├── report.pdf
+|   |   └── notes.txt
+|   └── 02/
+|       └── data.xlsx
 `
 
 ### Example 3: Rename with Timestamps
 `
-→ report_20260210_143022.pdf
-→ photo_20260210_143023.jpg
-→ data_20260210_143024.xlsx
+-> report_20260210_143022.pdf
+-> photo_20260210_143023.jpg
+-> data_20260210_143024.xlsx
 `
 
 ## Conflict Resolution
