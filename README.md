@@ -1,148 +1,173 @@
-﻿# 馃梻锔?鏅鸿兘鏂囦欢鏁寸悊宸ュ叿 (File Organizer)
+# Smart File Organizer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-涓€閿嚜鍔ㄦ暣鐞嗕綘鐨勬贩涔辨枃浠跺す锛佹敮鎸佹寜绫诲瀷銆佹棩鏈熴€佸ぇ灏忓垎绫伙紝杩樿兘鑷姩閲嶅懡鍚嶃€?
-## 鉁?涓€閿暣鐞嗭紝鍛婂埆娣蜂贡
+Automatically organize your messy folders! Sort files by type, date, or size with automatic renaming support.
 
-鏁寸悊鍓?vs 鏁寸悊鍚庯細
+## One-Click Organization
+
+Before vs After:
 
 ```
 Downloads/              organized_files/
-鈹溾攢鈹€ photo.jpg            鈹溾攢鈹€ 馃搧 images/
-鈹溾攢鈹€ report.pdf           鈹?  鈹溾攢鈹€ photo1.jpg
-鈹溾攢鈹€ video.mp4            鈹?  鈹斺攢鈹€ screenshot.gif
-鈹溾攢鈹€ old_doc.docx         鈹溾攢鈹€ 馃搧 documents/
-鈹斺攢鈹€ backup.zip           鈹?  鈹溾攢鈹€ report.pdf
-                         鈹?  鈹斺攢鈹€ report_20260210.pdf
-                         鈹溾攢鈹€ 馃搧 videos/
-                         鈹?  鈹斺攢鈹€ video.mp4
-                         鈹斺攢鈹€ 馃搧 archives/
-                             鈹斺攢鈹€ backup.zip
+├── photo.jpg            ├── 📁 images/
+├── report.pdf           │   ├── photo1.jpg
+├── video.mp4            │   └── screenshot.gif
+├── old_doc.docx         ├── 📁 documents/
+└── backup.zip           │   ├── report.pdf
+                         │   └── report_20260210.pdf
+                         ├── 📁 videos/
+                         │   └── video.mp4
+                         └── 📁 archives/
+                             └── backup.zip
 ```
 
-## 馃殌 蹇€熷紑濮?
+## Quick Start
+
 ```bash
-# 鎸夌被鍨嬫暣鐞嗭紙鎺ㄨ崘锛?甯垜鏁寸悊杩欎釜鏂囦欢澶癸紝鎸夋枃浠剁被鍨嬪垎绫?
-# 鎸夋棩鏈熸暣鐞?鎸変慨鏀规棩鏈熸暣鐞嗘枃浠讹紝鎸夋湀鍒嗙被
+# Organize by type (recommended)
+Organize this folder, sort by file type
 
-# 鏁寸悊 + 鍔犲簭鍙?鎶婂ぇ鏂囦欢鍜屽皬鏂囦欢鍒嗗紑锛屽姞涓婂簭鍙?```
+# Organize by date
+Organize files by modification date, grouped by month
 
-## 馃幆 鏍稿績鍔熻兘
-
-| 鍔熻兘 | 璇存槑 | 閫傜敤鍦烘櫙 |
-|------|------|----------|
-| 馃梻锔?**鏅鸿兘鍒嗙被** | 鎸夌被鍨?鏃ユ湡/澶у皬/鍓嶇紑鑷姩鍒嗙粍 | 鏁寸悊Downloads |
-| 鉁忥笍 **鑷姩閲嶅懡鍚?* | 鏃堕棿鎴炽€佸簭鍙枫€佷繚鎸佸師鍚?| 鏂囦欢澶鍒嗕笉娓?|
-| 馃敀 **瀹夊叏妯″紡** | 榛樿澶嶅埗涓嶅垹闄わ紝鍐茬獊鑷姩澶勭悊 | 鎬曟悶涓㈡枃浠?|
-
-## 馃摝 鏀寔鏍煎紡
-
-| 绫诲瀷 | 鏍煎紡 |
-|------|------|
-| 馃柤锔?鍥剧墖 | jpg, png, gif, bmp, svg, webp, ico, tiff |
-| 馃搫 鏂囨。 | pdf, doc, docx, txt, xlsx, csv, rtf, odt |
-| 馃幀 瑙嗛 | mp4, avi, mkv, mov, webm, wmv, flv |
-| 馃幍 闊抽 | mp3, wav, flac, aac, ogg, m4a, wma |
-| 馃摝 鍘嬬缉 | zip, rar, 7z, tar, gz, bz2 |
-| 馃捇 浠ｇ爜 | py, js, ts, html, java, cpp, go, rs |
-
-## 鈿欙笍 楂樼骇鐢ㄦ硶
-
-鏁寸悊鏂囦欢鏃舵寚瀹氳鍒欙細
-
-```
-鏁寸悊鏂囦欢锛?- 鍒嗙被鏂瑰紡锛氭寜鎵╁睍鍚?- 閲嶅懡鍚嶏細杩藉姞鏃堕棿鎴?- 鎿嶄綔锛氬鍒?- 鍐茬獊澶勭悊锛氳嚜鍔ㄩ噸鍛藉悕
+# Sort by size with numbering
+Separate large and small files with numbers
 ```
 
-## 馃搳 鏂囦欢澶у皬鍒嗙被
+## Key Features
 
-| 鍒嗙被 | 澶у皬鑼冨洿 |
-|------|----------|
-| 馃煝 鏋佸皬 | < 100KB |
-| 馃數 灏?| 100KB - 1MB |
-| 馃煛 涓?| 1MB - 10MB |
-| 馃煚 澶?| 10MB - 100MB |
-| 馃敶 瓒呭ぇ | > 100MB |
+| Feature | Description | Use Case |
+|----------|-------------|----------|
+| 🗂️ **Smart Sorting** | By type/date/size/prefix | Clean up Downloads |
+| ✏️ **Auto Rename** | Timestamps, numbers, or keep original | Too many files? |
+| 🔒 **Safe Mode** | Copy by default, conflict handling | Protect your files |
 
-## 馃洝锔?瀹夊叏淇濊瘉
+## Supported Formats
 
-- 鉁?榛樿澶嶅埗妯″紡锛屼繚鐣欏師鏂囦欢
-- 鉁?绉诲姩鍓嶇‘璁ゆ彁绀?- 鉁?澶氱鍐茬獊澶勭悊绛栫暐锛堣烦杩?瑕嗙洊/閲嶅懡鍚?璇㈤棶锛?
-## 馃摑 浣跨敤绀轰緥
+| Type | Formats |
+|------|---------|
+| 🖼️ Images | jpg, png, gif, bmp, svg, webp, ico, tiff |
+| 📄 Documents | pdf, doc, docx, txt, xlsx, csv, rtf, odt |
+| 🎬 Videos | mp4, avi, mkv, mov, webm, wmv, flv |
+| 🎵 Audio | mp3, wav, flac, aac, ogg, m4a, wma |
+| 📦 Archives | zip, rar, 7z, tar, gz, bz2 |
+| 💻 Code | py, js, ts, html, java, cpp, go, rs |
 
-### 绀轰緥 1锛氭寜绫诲瀷鍒嗙被
+## Advanced Usage
+
+Specify custom rules:
+
 ```
-鈫?馃搧 images/
-鈹?  鈹溾攢鈹€ photo1.jpg
-鈹?  鈹斺攢鈹€ screenshot.gif
-鈫?馃搧 documents/
-鈹?  鈹溾攢鈹€ report.pdf
-鈹?  鈹斺攢鈹€ notes.txt
-鈫?馃搧 videos/
-鈹?  鈹斺攢鈹€ video.mp4
-```
-
-### 绀轰緥 2锛氭寜鏃ユ湡鍒嗙被
-```
-鈫?馃搧 2026/
-鈹?  鈹溾攢鈹€ 馃搧 01/
-鈹?  鈹?  鈹溾攢鈹€ report.pdf
-鈹?  鈹?  鈹斺攢鈹€ notes.txt
-鈹?  鈹斺攢鈹€ 馃搧 02/
-鈹?      鈹斺攢鈹€ data.xlsx
+Organize files:
+- Sort by: file extension
+- Rename: add timestamp
+- Action: copy
+- Conflict: auto-rename
 ```
 
-### 绀轰緥 3锛氬甫鏃堕棿鎴抽噸鍛藉悕
+## File Size Categories
+
+| Category | Size Range |
+|----------|------------|
+| 🟢 Tiny | < 100KB |
+| 🔵 Small | 100KB - 1MB |
+| 🟡 Medium | 1MB - 10MB |
+| 🟠 Large | 10MB - 100MB |
+| 🔴 Huge | > 100MB |
+
+## Safety Features
+
+- ✅ Copy mode by default (original files preserved)
+- ✅ Confirmation before moving
+- ✅ Multiple conflict strategies (skip/overwrite/rename/ask)
+
+## Examples
+
+### Example 1: Sort by Type
 ```
-鈫?report_20260210_143022.pdf
-鈫?photo_20260210_143023.jpg
-鈫?data_20260210_143024.xlsx
+→ 📁 images/
+│   ├── photo1.jpg
+│   └── screenshot.gif
+→ 📁 documents/
+│   ├── report.pdf
+│   └── notes.txt
+→ 📁 videos/
+│   └── video.mp4
 ```
 
-## 馃搨 鏂囦欢鍐茬獊澶勭悊
+### Example 2: Sort by Date
+```
+→ 📁 2026/
+│   ├── 📁 01/
+│   │   ├── report.pdf
+│   │   └── notes.txt
+│   └── 📁 02/
+│       └── data.xlsx
+```
 
-褰撶洰鏍囨枃浠跺凡瀛樺湪鏃讹紝鍙€夋嫨锛?
-- **璺宠繃锛堥粯璁わ級** - 淇濈暀鐩爣鏂囦欢锛岃烦杩囧綋鍓嶆枃浠?- **瑕嗙洊** - 鐢ㄦ簮鏂囦欢鏇挎崲鐩爣鏂囦欢
-- **鑷姩閲嶅懡鍚?* - 鑷姩娣诲姞鍚庣紑 `_1`, `_2`, `_3`...
-- **璇㈤棶鐢ㄦ埛** - 姣忔鍐茬獊鏃惰闂浣曞鐞?
-## 馃枼锔?鎶€鏈粏鑺?
-- 鉁?鏀寔 Windows銆丩inux銆乵acOS
-- 鉁?浣跨敤 bash 鍛戒护杩涜鏂囦欢鎿嶄綔
-- 鉁?鏀寔宓屽鐩綍缁撴瀯
-- 鉁?鏈€澶ч噸鍛藉悕灏濊瘯娆℃暟锛?000
+### Example 3: Rename with Timestamps
+```
+→ report_20260210_143022.pdf
+→ photo_20260210_143023.jpg
+→ data_20260210_143024.xlsx
+```
 
-## 馃搵 閰嶇疆閫夐」
+## Conflict Resolution
 
-| 鍙傛暟 | 璇存槑 | 榛樿鍊?|
-|------|------|--------|
-| 婧愭枃浠跺す璺緞 | 闇€瑕佹暣鐞嗙殑鐩綍 | - |
-| 鐩爣鏂囦欢澶硅矾寰?| 鏁寸悊鍚庡瓨鏀剧殑鐩綍 | organized_files |
-| 鍒嗙被鏂瑰紡 | 鎵╁睍鍚?澶у皬/鏃ユ湡/鍓嶇紑 | 鎵╁睍鍚?|
-| 閲嶅懡鍚嶆柟寮?| 鏃堕棿鎴?搴忓彿/淇濇寔鍘熷悕 | 淇濇寔鍘熷悕 |
-| 鎿嶄綔绫诲瀷 | 澶嶅埗/绉诲姩 | 澶嶅埗 |
-| 鍐茬獊澶勭悊 | 璺宠繃/瑕嗙洊/閲嶅懡鍚?璇㈤棶 | 璺宠繃 |
+When target file exists:
 
-## 鈿狅笍 娉ㄦ剰浜嬮」
+- **Skip (default)** - Keep existing file
+- **Overwrite** - Replace with source file
+- **Auto-rename** - Add suffix _1, _2, _3...
+- **Ask user** - Prompt for each conflict
 
-1. **绉诲姩妯″紡** - 浣跨敤绉诲姩妯″紡浼氬垹闄ゅ師鏂囦欢锛岃璋ㄦ厧鎿嶄綔
-2. **瑕嗙洊妯″紡** - 閫夋嫨瑕嗙洊浼氬鑷村悓鍚嶆枃浠惰姘镐箙鏇挎崲
-3. **鏉冮檺闂** - 纭繚瀵规簮鐩綍鍜岀洰鏍囩洰褰曟湁璇诲啓鏉冮檺
-4. **鐗规畩瀛楃** - 鏂囦欢鍚嶅寘鍚壒娈婂瓧绗︽椂寤鸿浣跨敤鑷姩閲嶅懡鍚?
-## 馃摉 鏇存柊鏃ュ織
+## Technical Details
+
+- ✅ Windows, Linux, macOS support
+- ✅ Bash-based file operations
+- ✅ Nested directory support
+- ✅ Max 1000 rename attempts
+
+## Configuration Options
+
+| Parameter | Description | Default |
+|------------|-------------|---------|
+| Source path | Directory to organize | - |
+| Target path | Output directory | organized_files |
+| Sort method | extension/size/date/prefix | extension |
+| Rename method | timestamp/number/keep | keep original |
+| Action | copy/move | copy |
+| Conflict | skip/overwrite/rename/ask | skip |
+
+## Important Notes
+
+1. **Move mode** - Deletes original files, use with caution
+2. **Overwrite mode** - Permanently replaces existing files
+3. **Permissions** - Ensure read/write access to directories
+4. **Special characters** - Auto-rename recommended
+
+## Changelog
 
 ### v1.0.1 (2025~2026)
-- 鉁?鍒濆鐗堟湰鍙戝竷
-- 鉁?鏀寔4绉嶅垎绫绘柟寮?- 鉁?鏀寔3绉嶉噸鍛藉悕閫夐」
-- 鉁?鏀寔4绉嶅啿绐佸鐞嗙瓥鐣?- 鉁?鎻愪緵10涓娇鐢ㄧず渚?
-## 馃 璐＄尞
+- ✅ Initial release
+- ✅ 4 sorting methods
+- ✅ 3 rename options
+- ✅ 4 conflict strategies
+- ✅ 10 usage examples
 
-娆㈣繋鎻愪氦 Issue 鍜?Pull Request锛?
-## 馃搫 璁稿彲璇?
-MIT License - 娆㈣繋鑷敱浣跨敤鍜屼慨鏀?
-## 馃懆鈥嶐煉?浣滆€?
+## Contributing
+
+Issues and Pull Requests welcome!
+
+## License
+
+MIT License - Free to use and modify
+
+## Author
+
 Created with Claude Code
 
 ---
 
-馃挕 **鎻愮ず锛氭暣鐞嗘晥鏋滅ず渚嬪浘闇€瑕佷綘鑷繁鎴浘鏇挎崲涓婃柟浣嶇疆銆?*
+💡 **Tip: Replace the preview area above with your own screenshots.**
