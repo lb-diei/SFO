@@ -6,28 +6,36 @@ Automatically organize your messy folders! Sort files by type, date, or size wit
 
 
 
-## One-Click Organization
+## What It Does
 
-Before (Messy Downloads Folder)
+Before and After:
 
-| File Name       | Type   |
-|-----------------|--------|
-| photo.jpg       | Image  |
-| report.pdf      | Doc    |
-| video.mp4       | Video  |
-| old_doc.docx    | Doc    |
-| backup.zip      | Other  |
+BEFORE (Messy Folder):
+`
+Downloads/
+  |-- photo.jpg
+  |-- report.pdf
+  |-- video.mp4
+  |-- old_doc.docx
+  |-- backup.zip
+`
 
-
-
-After (Organized by Type)
-
-| Folder        | Files                      |
-|---------------|---------------------------|
-| images/       | photo.jpg                 |
-| documents/    | report.pdf, old_doc.docx |
-| videos/       | video.mp4                 |
-| archives/     | backup.zip               |
+AFTER (Organized):
+`
+organized_files/
+  |-- images/
+  |     |-- photo.jpg
+  |
+  |-- documents/
+  |     |-- report.pdf
+  |     |-- old_doc.docx
+  |
+  |-- videos/
+  |     |-- video.mp4
+  |
+  |-- archives/
+        |-- backup.zip
+`
 
 
 
@@ -48,11 +56,9 @@ Separate large and small files with numbers
 
 ## Key Features
 
-| Feature       | Description                         | Use Case           |
-|---------------|-------------------------------------|--------------------|
-| Smart Sorting | By type/date/size/prefix            | Clean up Downloads |
-| Auto Rename   | Timestamps, numbers, keep original  | Too many files?    |
-| Safe Mode     | Copy by default, conflict handling  | Protect your files |
+- Smart Sorting - By type, date, size, or prefix
+- Auto Rename - Timestamps, numbers, or keep original
+- Safe Mode - Copy by default with conflict handling
 
 
 
@@ -104,33 +110,48 @@ Conflict: auto-rename
 
 ## Examples
 
-Organize by Date
+Organize by Date:
 
-| Year-Month | Files                            |
-|------------|----------------------------------|
-| 2026-01    | report.pdf, notes.txt           |
-| 2026-02    | data.xlsx                       |
-| 2025-12    | old_backup.zip                  |
+`
+organized_files/
+  |-- 2026/
+  |     |-- 01/
+  |     |     |-- report.pdf
+  |     |     |-- notes.txt
+  |     |
+  |     |-- 02/
+  |           |-- data.xlsx
+  |
+  |-- 2025/
+        |-- 12/
+              |-- old_backup.zip
+`
 
+Organize by Size:
 
+`
+organized_files/
+  |-- tiny/
+  |     |-- icon.png
+  |     |-- logo.svg
+  |
+  |-- small/
+  |     |-- photo.jpg
+  |     |-- document.pdf
+  |
+  |-- medium/
+        |-- video.mp4
+        |-- archive.zip
+`
 
-Organize by Size
+Rename with Timestamps:
 
-| Category | Files                                  |
-|----------|----------------------------------------|
-| Tiny     | icon.png, logo.svg                     |
-| Small    | photo.jpg, document.pdf                |
-| Medium   | video.mp4, archive.zip                 |
-
-
-
-Rename with Timestamps
-
-| Original Name    | Renamed To                        |
-|------------------|-----------------------------------|
-| report.pdf       | report_20260210_143022.pdf       |
-| photo.jpg        | photo_20260210_143023.jpg        |
-| data.xlsx        | data_20260210_143024.xlsx         |
+`
+Before:                    After:
+report.pdf       -->       report_20260210_143022.pdf
+photo.jpg        -->       photo_20260210_143023.jpg
+data.xlsx        -->       data_20260210_143024.xlsx
+`
 
 
 
@@ -138,7 +159,7 @@ Rename with Timestamps
 
 | Action         | Description                             |
 |----------------|-----------------------------------------|
-| Skip           | Keep existing file (default)           |
+| Skip           | Keep existing file (default)             |
 | Overwrite      | Replace with source file               |
 | Auto-rename    | Add suffix _1, _2, _3...              |
 | Ask user       | Prompt for each conflict               |
@@ -151,7 +172,7 @@ Rename with Timestamps
 |------------------------|---------------------------------------|
 | Operating Systems      | Windows, Linux, macOS                |
 | File Operations        | Bash-based                            |
-| Directory Structure     | Nested folders supported               |
+| Directory Structure    | Nested folders supported               |
 | Max Rename Attempts    | 1000                                  |
 
 
